@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct JournalView: View {
+    let journal: [Entry]
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -15,12 +16,13 @@ struct ContentView: View {
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
         }
+        .navigationTitle("Welcome")
         .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct JournalView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        JournalView(journal: Entry.sampleData)
     }
 }

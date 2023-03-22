@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		67DDF1A429CB8088004E36DE /* FoodDiaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DDF1A329CB8088004E36DE /* FoodDiaryApp.swift */; };
-		67DDF1A629CB8088004E36DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DDF1A529CB8088004E36DE /* ContentView.swift */; };
+		67DDF1A629CB8088004E36DE /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DDF1A529CB8088004E36DE /* JournalView.swift */; };
 		67DDF1A829CB808A004E36DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67DDF1A729CB808A004E36DE /* Assets.xcassets */; };
 		67DDF1AB29CB808A004E36DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67DDF1AA29CB808A004E36DE /* Preview Assets.xcassets */; };
 		67DDF1B529CB808A004E36DE /* FoodDiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DDF1B429CB808A004E36DE /* FoodDiaryTests.swift */; };
 		67DDF1BF29CB808A004E36DE /* FoodDiaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DDF1BE29CB808A004E36DE /* FoodDiaryUITests.swift */; };
 		67DDF1C129CB808A004E36DE /* FoodDiaryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DDF1C029CB808A004E36DE /* FoodDiaryUITestsLaunchTests.swift */; };
+		67DDF1CF29CB80C0004E36DE /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DDF1CE29CB80C0004E36DE /* Entry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		67DDF1A029CB8088004E36DE /* FoodDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67DDF1A329CB8088004E36DE /* FoodDiaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDiaryApp.swift; sourceTree = "<group>"; };
-		67DDF1A529CB8088004E36DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		67DDF1A529CB8088004E36DE /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
 		67DDF1A729CB808A004E36DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67DDF1AA29CB808A004E36DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		67DDF1B029CB808A004E36DE /* FoodDiaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodDiaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,7 @@
 		67DDF1BA29CB808A004E36DE /* FoodDiaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodDiaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67DDF1BE29CB808A004E36DE /* FoodDiaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDiaryUITests.swift; sourceTree = "<group>"; };
 		67DDF1C029CB808A004E36DE /* FoodDiaryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDiaryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		67DDF1CE29CB80C0004E36DE /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +96,9 @@
 		67DDF1A229CB8088004E36DE /* FoodDiary */ = {
 			isa = PBXGroup;
 			children = (
+				67DDF1CD29CB80B5004E36DE /* Models */,
 				67DDF1A329CB8088004E36DE /* FoodDiaryApp.swift */,
-				67DDF1A529CB8088004E36DE /* ContentView.swift */,
+				67DDF1A529CB8088004E36DE /* JournalView.swift */,
 				67DDF1A729CB808A004E36DE /* Assets.xcassets */,
 				67DDF1A929CB808A004E36DE /* Preview Content */,
 			);
@@ -125,6 +128,14 @@
 				67DDF1C029CB808A004E36DE /* FoodDiaryUITestsLaunchTests.swift */,
 			);
 			path = FoodDiaryUITests;
+			sourceTree = "<group>";
+		};
+		67DDF1CD29CB80B5004E36DE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				67DDF1CE29CB80C0004E36DE /* Entry.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67DDF1A629CB8088004E36DE /* ContentView.swift in Sources */,
+				67DDF1CF29CB80C0004E36DE /* Entry.swift in Sources */,
+				67DDF1A629CB8088004E36DE /* JournalView.swift in Sources */,
 				67DDF1A429CB8088004E36DE /* FoodDiaryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
