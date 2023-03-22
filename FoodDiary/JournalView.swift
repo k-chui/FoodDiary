@@ -22,7 +22,6 @@ struct JournalView: View {
 }
 
 struct JournalView_Previews: PreviewProvider {
-    static var previews: some View
-        JournalView(journal: Entry.sampleData)
+    static var previews: some View {        JournalView(journal: Entry.sampleData)
     }
 }
