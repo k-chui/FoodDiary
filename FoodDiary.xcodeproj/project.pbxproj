@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67458FDF29CCA9C200155A4C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67458FDE29CCA9C200155A4C /* CardView.swift */; };
 		67DDF1A429CB8088004E36DE /* FoodDiaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DDF1A329CB8088004E36DE /* FoodDiaryApp.swift */; };
 		67DDF1A629CB8088004E36DE /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DDF1A529CB8088004E36DE /* JournalView.swift */; };
 		67DDF1A829CB808A004E36DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67DDF1A729CB808A004E36DE /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		67458FDE29CCA9C200155A4C /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		67DDF1A029CB8088004E36DE /* FoodDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67DDF1A329CB8088004E36DE /* FoodDiaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDiaryApp.swift; sourceTree = "<group>"; };
 		67DDF1A529CB8088004E36DE /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			children = (
 				67DDF1CD29CB80B5004E36DE /* Models */,
 				67DDF1A329CB8088004E36DE /* FoodDiaryApp.swift */,
+				67458FDE29CCA9C200155A4C /* CardView.swift */,
 				67DDF1A529CB8088004E36DE /* JournalView.swift */,
 				67DDF1A729CB808A004E36DE /* Assets.xcassets */,
 				67DDF1A929CB808A004E36DE /* Preview Content */,
@@ -270,6 +273,7 @@
 			files = (
 				67DDF1CF29CB80C0004E36DE /* Entry.swift in Sources */,
 				67DDF1A629CB8088004E36DE /* JournalView.swift in Sources */,
+				67458FDF29CCA9C200155A4C /* CardView.swift in Sources */,
 				67DDF1A429CB8088004E36DE /* FoodDiaryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

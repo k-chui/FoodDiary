@@ -11,11 +11,13 @@ struct Entry: Identifiable {
     let id: UUID
     var name: String
     var tags: [String]
+    var rating: Int?
     
-    init(id: UUID = UUID(), name: String, tags: [String]) {
+    init(id: UUID = UUID(), name: String, tags: [String], rating: Int? = nil) {
         self.id = id
         self.name = name
         self.tags = tags
+        self.rating = rating
     }
 }
 

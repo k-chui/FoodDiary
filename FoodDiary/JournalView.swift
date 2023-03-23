@@ -11,17 +11,22 @@ struct JournalView: View {
     let journal: [Entry]
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            List {
+                ForEach(journal) { entry in
+                    NavigationLink(destination: Text(entry.name))
+                    {
+                        CardView(entry: entry)
+                    }
+                }
+            }
+            .navigationTitle("Welcome")
         }
-        .navigationTitle("Welcome")
-        .padding()
     }
 }
 
 struct JournalView_Previews: PreviewProvider {
-    static var previews: some View {        JournalView(journal: Entry.sampleData)
+    static var previews: some View {        NavigationView {
+        JournalView(journal: Entry.sampleData)
+    }
     }
 }
